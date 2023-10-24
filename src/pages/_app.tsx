@@ -22,12 +22,12 @@ const MyApp: AppType<{ session: Session | null }> = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <meta name="description" content="A social media app created with the T3 stack"></meta>
-      <div className="container mx-auto flex">
+      <div className="container mx-auto flex items-start sm:pr-4">
       <SideNav />
       <div className="min-h-screen flex-grow border-x">
 
-      </div>
       <Component {...pageProps} />
+      </div>
       </div>
     </SessionProvider>
   );

@@ -5,9 +5,9 @@ import { signOut, signIn, useSession } from 'next-auth/react'
 
 const SideNav = () => {
 
-    const session = useSession()
+const session = useSession()
 
-    const user = session.data?.user
+ const user = session.data?.user
 
   return (
     <nav className="sticky top-0 self-start px-2 py-4">
@@ -24,12 +24,13 @@ const SideNav = () => {
             )}
             {user == null ? (
                 <li>
-                    <button onClick={() => void signOut()}>Log Out</button>
+                    <button onClick={() => void signIn()}>Sign In</button>
                 </li>
-            ) : <li>
-                <button onClick={() => void signIn()}>Log In</button>
-            </li> } 
-            
+            ) : (
+            <li>
+                <button onClick={() => void signOut()}>Log Out</button>
+            </li> 
+            )}
         </ul>
     </nav>
   )
