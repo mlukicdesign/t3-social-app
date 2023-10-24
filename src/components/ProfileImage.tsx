@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 type ProfileImageProps = {
-    src?: string 
+    src?: string | null
     className?: string
 }
 
