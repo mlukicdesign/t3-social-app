@@ -15,6 +15,8 @@ const config = {
         "@typescript-eslint/no-unsafe-return": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/restrict-plus-operands": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        
       },
       files: ["*.ts", "*.tsx"],
       // TODO: Remove if/when this gets fixed
